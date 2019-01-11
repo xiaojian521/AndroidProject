@@ -1,0 +1,107 @@
+<?xml version="1.0"?>
+<NUANCE>
+<VERSION>NUAN_1.0</VERSION>
+<HEADER>
+  <BROKERSTRING>pipeline/Chinese Mandarin/li-li/22/embedded-compact/1.0.0/text/pcm</BROKERSTRING>
+  <PRIORITY>5103</PRIORITY>
+  <PARAMETERS>
+    <language>Chinese Mandarin</language>
+    <langcode>MNC</langcode>
+    <langietf>zh-CN</langietf>
+    <langversion>7.0.1</langversion>
+    <voice>Li-Li</voice>
+    <voiceversion>1.0.3</voiceversion>
+    <vopversion>1.0.0</vopversion>
+    <gender>Female</gender>
+    <age>Adult</age>
+    <fecfg>cfg3</fecfg>
+    <voiceml>no</voiceml>
+    <noclmset>enu,eng</noclmset>
+    <datapackagename>mnc/li-li/embedded-compact/1-0-0</datapackagename>
+    <fedataprefix></fedataprefix>
+    <feextcfgdataprefix></feextcfgdataprefix>
+    <fedatapackaging>clc</fedatapackaging>
+    <fevoice>Li-Li</fevoice>
+    <frequencyhz>22050</frequencyhz>
+    <bet3voiceoverride.BREAKER>PHRASE_TIME</bet3voiceoverride.BREAKER>
+    <bet3voiceoverride.BRK_LENGTH>100</bet3voiceoverride.BRK_LENGTH>
+    <voicemodel>bet3</voicemodel>
+    <voiceoperatingpoint>embedded-compact</voiceoperatingpoint>
+    <reduction>bet3</reduction>
+    <coder></coder>
+    <bitrate></bitrate>
+    <overheadframes></overheadframes>
+    <audiooutputmimetype>audio/L16;rate=22050</audiooutputmimetype>
+    <audiooutputsamplebits>16</audiooutputsamplebits>
+    <tokentnnumframesinblock>50</tokentnnumframesinblock>
+    <nlucompatvc6be>yes</nlucompatvc6be>
+    <compatstrongbnd>no</compatstrongbnd>
+    <tnpausedurnormal>300</tnpausedurnormal>
+    <waitfactor>3</waitfactor>
+    <maxdctwordlen>4</maxdctwordlen>
+  </PARAMETERS>
+  <OBJECTS>
+    <AUDIOFETCHER>audiofetch</AUDIOFETCHER>
+    <DCTEG>dcteg</DCTEG>
+    <DOMAINMNGR>domain_mngr</DOMAINMNGR>
+    <FE_DCTLKP>fe/fe_dctlkp</FE_DCTLKP>
+    <FE_DEPES>fe/fe_depes</FE_DEPES>
+    <FE_UDWL>fe/fe_udwl</FE_UDWL>
+    <INET>inetspi</INET>
+    <PHONMAP>phonmap</PHONMAP>
+  </OBJECTS>
+  <COMPONENTS>
+    <COMPONENT>xcoder</COMPONENT>
+    <COMPONENT>ttt/tbm</COMPONENT>
+    <COMPONENT>ttt/re</COMPONENT>
+    <COMPONENT>pp/text_parser</COMPONENT>
+    <COMPONENT>pp/sent_parser</COMPONENT>
+    <COMPONENT>pp/word_parser</COMPONENT>
+    <COMPONENT>fe/fe_wordseg</COMPONENT>
+    <COMPONENT>fe/fe_sprop</COMPONENT>
+    <COMPONENT>fe/fe_initlingdb</COMPONENT>
+    <COMPONENT>fe/fe_promptorth</COMPONENT>
+    <COMPONENT>fe/tokentn</COMPONENT>
+    <COMPONENT>fe/fe_abbrtn</COMPONENT>
+    <COMPONENT>fe/fe_puncsptn</COMPONENT>
+    <COMPONENT>fe/fe_oneword</COMPONENT>
+    <COMPONENT>fe/fe_pos</COMPONENT>
+    <COMPONENT>fe/fe_hmogrph</COMPONENT>
+    <COMPONENT>fe/fe_phrasing</COMPONENT>
+    <COMPONENT>fe/fe_normout</COMPONENT>
+    <COMPONENT>fe/fe_prmfx</COMPONENT>
+    <COMPONENT>fe/fe_prompt</COMPONENT>
+    <COMPONENT>fe/fe_global</COMPONENT>
+    <COMPONENT>fe/be_adapt</COMPONENT>
+    <COMPONENT>select/bet3</COMPONENT>
+    <COMPONENT>synth/bet3</COMPONENT>
+    <COMPONENT>audioinserter</COMPONENT>
+    <COMPONENT>phonmap/mrk</COMPONENT>
+    <COMPONENT>xcoder/mrksync</COMPONENT>
+  </COMPONENTS>
+  <RESOURCES>
+    <!-- The next entries specify default broker strings for the user dictionary resources, once language specific and once voice specific -->
+    <RESOURCE content-type="application/edct-bin-dictionary;loader=broker">
+      userdct/mnc
+    </RESOURCE>
+    <RESOURCE content-type="application/edct-bin-dictionary;loader=broker">
+      userdct/mnc/li-li
+    </RESOURCE>
+
+    <!-- The next entries specify default broker strings tuning resources if available -->
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  </RESOURCES>
+</HEADER>
+</NUANCE>

@@ -1,0 +1,31 @@
+Language model created by QuickLM on Thu Oct 25 05:20:39 EDT 2018
+Copyright (c) 1996-2010 Carnegie Mellon University and Alexander I. Rudnicky
+
+The model is in standard ARPA format, designed by Doug Paul while he was at MITRE.
+
+The code that was used to produce this language model is available in Open Source.
+Please visit http://www.speech.cs.cmu.edu/tools/ for more information
+
+The (fixed) discount mass is 0.5. The backoffs are computed using the ratio method.
+This model based on a corpus of 23 sentences and 25 words
+
+\data\
+ngram 1=25
+ngram 2=46
+ngram 3=23
+
+\1-grams:
+-0.7782 </s> -0.3010
+-0.7782 <s> -0.2218
+-2.1399 你好小泰 -0.2218
+
+
+\2-grams:
+-1.6628 <s> 你好小泰 0.0000
+-0.3010 你好小泰 </s> -0.3010
+
+
+\3-grams:
+-0.3010 <s> 你好小泰 </s>
+
+\end\
