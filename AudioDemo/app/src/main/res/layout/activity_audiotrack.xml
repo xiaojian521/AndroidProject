@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/btn_start"
+        android:layout_width="185dp"
+        android:layout_height="81dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="20dp"
+        android:text="PLAY"
+        app:layout_constraintStart_toEndOf="@+id/btn_play"
+        app:layout_constraintTop_toBottomOf="@+id/btn_convert"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btn_control"
+        android:layout_width="185dp"
+        android:layout_height="81dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="28dp"
+        android:text="@string/start_record"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btn_convert"
+        android:layout_width="185dp"
+        android:layout_height="81dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="28dp"
+        android:text="pcm转wav"
+        app:layout_constraintStart_toEndOf="@+id/btn_control"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btn_play"
+        android:layout_width="185dp"
+        android:layout_height="81dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="28dp"
+        android:text="@string/start_play"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_control"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btn_stop"
+        android:layout_width="185dp"
+        android:layout_height="81dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="28dp"
+        android:text="stop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_play"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btn_flush"
+        android:layout_width="185dp"
+        android:layout_height="81dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginStart="24dp"
+        android:text="FLUSH"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_pause"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btn_pause"
+        android:layout_width="185dp"
+        android:layout_height="81dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginStart="24dp"
+        android:text="PAUSE"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_stop"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
