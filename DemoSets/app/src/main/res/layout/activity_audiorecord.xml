@@ -1,0 +1,71 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_record"
+            android:layout_width="fill_parent"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:text="开始录音"
+            android:background="@drawable/shape"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"/>
+
+        <Button
+            android:id="@+id/btn_stop"
+            android:layout_width="fill_parent"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:text="暂停播放"
+            android:background="@drawable/shape"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_format"
+            android:layout_width="fill_parent"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:text="PcmToWav"
+            android:background="@drawable/shape"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        android:textSize= "25dp"
+        android:textColor="#000000"
+        android:background="@drawable/shape"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"/>
+
+
+</LinearLayout>
