@@ -98,18 +98,26 @@ public class AudioRecordActivity extends AppCompatActivity implements View.OnCli
         mAudioRecord = new AudioRecord(MediaRecorder.AudioSource.MIC, SAMPLE_RATE_INHZ,
                 CHANNEL_CONFIG, AUDIO_FORMAT, minBufferSize);
 
+        mAudioRecord.startRecording();
+
+        int recordState = mAudioRecord.getRecordingState();
+        if(recordState == AudioRecord.RECORDSTATE_STOPPED) {
+            StringBuilder textstate = new StringBuilder();
+            textstate.append("当前录音状态：RECORDSTATE_STOPPED. startRecording失败，请抢占录音焦点！");
+            textstate.append("\n").append(mTextView.getText().toString());
+            mTextView.setText(textstate);
+            return;
+        }
+
+        isRecording = true;
         final byte data[] = new byte[minBufferSize];
         //final File file = new File(getExternalFilesDir(Environment.DIRECTORY_MUSIC), "test_xj.pcm");
         final File file = new File(pcmfilepath);
         if (file.exists()) {
             file.mkdirs();
         }
-
-        mAudioRecord.startRecording();
-        isRecording = true;
-
         StringBuilder text = new StringBuilder();
-        text.append("创建录音文件成功，文件路径：").append(pcmfilepath).append("开始录音");
+        text.append("创建录音文件成功，文件路径：").append(pcmfilepath).append("开始录音").append("minBufferSize is = ").append(minBufferSize);
         text.append("\n").append(mTextView.getText().toString());
         mTextView.setText(text);
 
