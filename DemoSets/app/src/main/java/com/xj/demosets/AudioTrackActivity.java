@@ -218,6 +218,9 @@ public class AudioTrackActivity extends AppCompatActivity implements View.OnClic
 
 
     private void startPlay() {
+        //使用听筒播放,创建AudioTrack时要传入STREAM_VOICE_CALL
+//        mAudioManager.setSpeakerphoneOn(false);
+//        mAudioManager.setMode(AudioManager.MODE_IN_CALL);
         isQuit = true;
         mAudioTrack.play();
         writeData();
@@ -229,6 +232,7 @@ public class AudioTrackActivity extends AppCompatActivity implements View.OnClic
     }
 
     private void stopTrack() {
+//        mAudioManager.setMode(AudioManager.MODE_NORMAL);
         isQuit = false;
         if(mAudioTrack != null) {
             mAudioTrack.stop();
